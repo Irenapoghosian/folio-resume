@@ -21,6 +21,16 @@
 
 ---
 
+<p align="center">
+  <img src="docs/screenshots/hero.png" alt="Folio on iPhone: the profile, the history timeline, projects filtered by AVFoundation, the Nimbus project page, and the profile in Dark Mode">
+</p>
+
+## Screenshots
+
+| Profile | History | Projects | Project | Dark |
+|:--:|:--:|:--:|:--:|:--:|
+| <img src="docs/screenshots/profile.png" width="160"> | <img src="docs/screenshots/history.png" width="160"> | <img src="docs/screenshots/projects.png" width="160"> | <img src="docs/screenshots/detail.png" width="160"> | <img src="docs/screenshots/dark.png" width="160"> |
+
 ## Features
 
 - **Profile** — photo, title, location and availability, one-tap email, Upwork, LinkedIn and GitHub, an About section, skills grouped by area, and languages.
