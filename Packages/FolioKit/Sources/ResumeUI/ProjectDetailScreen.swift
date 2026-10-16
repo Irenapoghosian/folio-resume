@@ -76,7 +76,7 @@ struct ProjectDetailScreen: View {
                         .resizable()
                         .scaledToFit()
                         .frame(height: 380)
-                        .clipShape(RoundedRectangle(cornerRadius: 26, style: .continuous))
+                        .clipShape(RoundedRectangle(cornerRadius: 34, style: .continuous))
                         .shadow(color: .black.opacity(0.15), radius: 10, y: 6)
                         .accessibilityLabel("\(project.name) screenshot")
                 }

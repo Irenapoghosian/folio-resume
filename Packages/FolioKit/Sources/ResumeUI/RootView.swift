@@ -35,14 +35,22 @@ public struct FolioRootView: View {
     }
 
     public var body: some View {
-        TabView(selection: $tab) {
-            ProfileScreen(model: model, appearance: $appearance).tag(FolioTab.profile)
-            HistoryScreen(resume: model.resume).tag(FolioTab.history)
-            ProjectsScreen(model: model).tag(FolioTab.projects)
+        // All three screens stay alive (keeping scroll position and navigation); only the selected one shows.
+        // A plain ZStack instead of TabView: newer iOS keeps drawing the system tab bar under a custom one.
+        ZStack {
+            page(.profile) { ProfileScreen(model: model, appearance: $appearance) }
+            page(.history) { HistoryScreen(resume: model.resume) }
+            page(.projects) { ProjectsScreen(model: model) }
         }
-        .toolbar(.hidden, for: .tabBar)
-        .safeAreaInset(edge: .bottom) { tabBar }
+        .safeAreaInset(edge: .bottom, spacing: 0) { tabBar }
         .preferredColorScheme(appearance.colorScheme)
+    }
+
+    private func page<Content: View>(_ item: FolioTab, @ViewBuilder content: () -> Content) -> some View {
+        content()
+            .opacity(tab == item ? 1 : 0)
+            .allowsHitTesting(tab == item)
+            .accessibilityHidden(tab != item)
     }
 
     private var tabBar: some View {
