@@ -72,19 +72,33 @@ public enum ResumeRules {
 
     /// What's wrong with a résumé, in plain words. Empty means it's ready to ship.
     public static func problems(in resume: Resume) -> [String] {
+        contactProblems(in: resume) + projectProblems(in: resume.projects) + periodProblems(in: resume)
+    }
+
+    private static func contactProblems(in resume: Resume) -> [String] {
         var problems: [String] = []
         if resume.profile.name.trimmingCharacters(in: .whitespaces).isEmpty { problems.append("The name is empty.") }
         if !resume.contact.email.contains("@") { problems.append("The email address looks wrong.") }
         for link in resume.contact.links where link.url.scheme != "https" {
             problems.append("\(link.title) should be an https link.")
         }
-        let ids = resume.projects.map(\.id)
+        return problems
+    }
+
+    private static func projectProblems(in projects: [Project]) -> [String] {
+        var problems: [String] = []
+        let ids = projects.map(\.id)
         if Set(ids).count != ids.count { problems.append("Two projects share an id.") }
-        for project in resume.projects {
+        for project in projects {
             if project.technologies.isEmpty { problems.append("\(project.name) lists no technologies.") }
             if rgb(fromHex: project.accent) == nil { problems.append("\(project.name) has an invalid accent color.") }
             if project.repository.host != "github.com" { problems.append("\(project.name) should link to GitHub.") }
         }
+        return problems
+    }
+
+    private static func periodProblems(in resume: Resume) -> [String] {
+        var problems: [String] = []
         for item in resume.experience where (item.endYear ?? item.startYear) < item.startYear {
             problems.append("\(item.role) ends before it starts.")
         }
