@@ -1,0 +1,326 @@
+{
+  "profile": {
+    "name": "Irina Poghosyan",
+    "title": "iOS Developer",
+    "location": "Yerevan, Armenia",
+    "availability": "Open to remote work",
+    "summary": "iOS developer building native iPhone apps in Swift, SwiftUI and UIKit: camera and on-device AI, live data and charts, widgets, modular architecture, tested and shipped with CI. I care about clean code, smooth UI and apps that explain themselves.",
+    "photo": "ProfilePhoto"
+  },
+  "contact": {
+    "email": "poghosyanir@gmail.com",
+    "links": [
+      {
+        "kind": "upwork",
+        "title": "Upwork",
+        "url": "https://www.upwork.com/freelancers/~0139800b5b7c88c3b6"
+      },
+      {
+        "kind": "linkedin",
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/irina-poghosyan-6811b2216/"
+      },
+      {
+        "kind": "github",
+        "title": "GitHub",
+        "url": "https://github.com/Irenapoghosian"
+      }
+    ]
+  },
+  "skills": [
+    {
+      "name": "Languages & UI",
+      "items": [
+        "Swift",
+        "SwiftUI",
+        "UIKit",
+        "Combine",
+        "async/await"
+      ]
+    },
+    {
+      "name": "Apple frameworks",
+      "items": [
+        "Core ML",
+        "Vision",
+        "AVFoundation",
+        "Core Image",
+        "Metal",
+        "Swift Charts",
+        "WidgetKit",
+        "Core Location",
+        "MapKit",
+        "SwiftData",
+        "Core Data"
+      ]
+    },
+    {
+      "name": "Architecture & tooling",
+      "items": [
+        "MVVM",
+        "Clean Architecture",
+        "Swift Package Manager",
+        "REST APIs",
+        "XCTest",
+        "SwiftLint",
+        "GitHub Actions",
+        "Git"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "role": "iOS Developer",
+      "organization": "Freelance · Upwork",
+      "startYear": 2024,
+      "endYear": null,
+      "highlights": [
+        "Build native iPhone apps in Swift, SwiftUI and UIKit, from the first screen to the App Store build.",
+        "Team up with an Android developer to deliver the same product on both platforms."
+      ]
+    },
+    {
+      "role": "Laboratory Assistant",
+      "organization": "Institute for Informatics and Automation Problems (IIAP)",
+      "startYear": 2023,
+      "endYear": null,
+      "highlights": [
+        "Set up and maintain computing environments and technical infrastructure for researchers.",
+        "Collect, organize and document experimental data and system outputs.",
+        "Contribute to programming and automation tasks."
+      ],
+      "startMonth": 2
+    },
+    {
+      "role": "Radio Engineer",
+      "organization": "Engineering City",
+      "startYear": 2021,
+      "endYear": 2022,
+      "highlights": [
+        "Designed, built and tested radio-frequency systems and wireless communication circuits.",
+        "Ran simulations, measurements and troubleshooting for transmitters, receivers and antennas.",
+        "Worked with R&D teams on system performance, hardware prototypes and technical documentation."
+      ],
+      "startMonth": 8
+    }
+  ],
+  "education": [
+    {
+      "degree": "MA Computer Science",
+      "institution": "National Polytechnic University of Armenia",
+      "startYear": 2022,
+      "endYear": 2024
+    },
+    {
+      "degree": "BA Radio Engineering",
+      "institution": "National Polytechnic University of Armenia",
+      "startYear": 2018,
+      "endYear": 2022
+    },
+    {
+      "degree": "Web Development",
+      "institution": "Codesk Company",
+      "startYear": 2023,
+      "endYear": 2025
+    }
+  ],
+  "languages": [
+    {
+      "name": "Armenian",
+      "level": "Native"
+    },
+    {
+      "name": "English",
+      "level": "Professional"
+    },
+    {
+      "name": "Russian",
+      "level": "Professional"
+    },
+    {
+      "name": "German",
+      "level": "Basic"
+    }
+  ],
+  "projects": [
+    {
+      "id": "pulse",
+      "name": "Pulse",
+      "tagline": "Crypto markets & portfolio tracker",
+      "summary": "Live CoinGecko prices with an offline cache, interactive charts, a SwiftData portfolio and Home Screen widgets, in English, Armenian and Russian.",
+      "highlights": [
+        "9 Swift packages with Clean Architecture",
+        "Interactive Swift Charts with VoiceOver Audio Graphs",
+        "Live language switching",
+        "100+ unit tests in CI"
+      ],
+      "technologies": [
+        "SwiftUI",
+        "Swift Charts",
+        "SwiftData",
+        "WidgetKit",
+        "Clean Architecture",
+        "REST APIs"
+      ],
+      "repository": "https://github.com/Irenapoghosian/pulse-crypto",
+      "icon": "icon-pulse",
+      "screenshots": [
+        "pulse-1",
+        "pulse-2",
+        "pulse-3"
+      ],
+      "accent": "#7C5CFF",
+      "featured": true
+    },
+    {
+      "id": "sight",
+      "name": "Sight",
+      "tagline": "On-device AI camera",
+      "summary": "Point the camera and it names what it sees, boxes every object, reads text and lifts subjects into stickers, all on the iPhone.",
+      "highlights": [
+        "Core ML YOLOv3 object detection",
+        "Vision text recognition and subject lifting",
+        "Frame-throttled async pipeline at ~12 fps"
+      ],
+      "technologies": [
+        "Core ML",
+        "Vision",
+        "AVFoundation",
+        "SwiftUI",
+        "async/await"
+      ],
+      "repository": "https://github.com/Irenapoghosian/sight-ai-camera",
+      "icon": "icon-sight",
+      "screenshots": [
+        "sight-1",
+        "sight-2"
+      ],
+      "accent": "#2EDBF5",
+      "featured": true
+    },
+    {
+      "id": "nimbus",
+      "name": "Nimbus",
+      "tagline": "Weather with a living sky",
+      "summary": "Your location and saved cities, a 24-hour chart and a 10-day forecast over an animated sky, plus Home Screen and Lock Screen widgets.",
+      "highlights": [
+        "Canvas + TimelineView rain, snow and stars",
+        "Swift Charts with drag-to-read",
+        "Widgets with their own city search",
+        "89 unit tests in CI"
+      ],
+      "technologies": [
+        "SwiftUI",
+        "Swift Charts",
+        "WidgetKit",
+        "Core Location",
+        "REST APIs"
+      ],
+      "repository": "https://github.com/Irenapoghosian/nimbus-weather",
+      "icon": "icon-nimbus",
+      "screenshots": [
+        "nimbus-1",
+        "nimbus-2",
+        "nimbus-3"
+      ],
+      "accent": "#56AAFF",
+      "featured": true
+    },
+    {
+      "id": "echo",
+      "name": "Echo",
+      "tagline": "A UIKit messenger, built in code",
+      "summary": "No storyboards: diffable data sources, Core Data, a composer that rides on the keyboard, reply and delete menus, and Dark Mode.",
+      "highlights": [
+        "Diffable data sources keyed by ID",
+        "MVVM with Combine",
+        "Context menus with lifted bubbles"
+      ],
+      "technologies": [
+        "UIKit",
+        "Combine",
+        "Core Data",
+        "MVVM"
+      ],
+      "repository": "https://github.com/Irenapoghosian/echo-chat",
+      "icon": "icon-echo",
+      "screenshots": [
+        "echo-1",
+        "echo-2",
+        "echo-3"
+      ],
+      "accent": "#2882FF",
+      "featured": true
+    },
+    {
+      "id": "lumen",
+      "name": "Lumen",
+      "tagline": "Pro camera with live GPU filters",
+      "summary": "A camera built from scratch: real-time filters, multi-lens zoom, tap to focus, exposure control and full-resolution capture.",
+      "highlights": [
+        "Core Image filters on Metal",
+        "0.5× to 3× lens switching",
+        "Manual focus and exposure"
+      ],
+      "technologies": [
+        "AVFoundation",
+        "Core Image",
+        "Metal",
+        "SwiftUI"
+      ],
+      "repository": "https://github.com/Irenapoghosian/lumen-camera",
+      "icon": "icon-lumen",
+      "screenshots": [
+        "lumen-1",
+        "lumen-2"
+      ],
+      "accent": "#F5A03C",
+      "featured": false
+    },
+    {
+      "id": "expense",
+      "name": "ExpenseTracker",
+      "tagline": "Budgets & spending",
+      "summary": "Expenses and monthly budgets with Core Data, onboarding, and unit and UI tests in CI.",
+      "highlights": [
+        "Core Data persistence",
+        "Monthly budgets by category",
+        "XCUITest UI tests"
+      ],
+      "technologies": [
+        "SwiftUI",
+        "Core Data",
+        "MVVM",
+        "XCTest"
+      ],
+      "repository": "https://github.com/Irenapoghosian/expense-tracker",
+      "icon": "icon-expense",
+      "screenshots": [
+        "expense-1",
+        "expense-2"
+      ],
+      "accent": "#38C878",
+      "featured": false
+    },
+    {
+      "id": "feed",
+      "name": "FeedApp",
+      "tagline": "Instagram-style photo feed",
+      "summary": "An infinite photo feed on the Unsplash API with pagination and a two-tier image cache.",
+      "highlights": [
+        "Infinite scroll with pagination",
+        "Memory and disk image cache"
+      ],
+      "technologies": [
+        "SwiftUI",
+        "REST APIs",
+        "async/await"
+      ],
+      "repository": "https://github.com/Irenapoghosian/feed-app",
+      "icon": "icon-feed",
+      "screenshots": [],
+      "accent": "#EC5AA0",
+      "featured": false
+    }
+  ]
+}

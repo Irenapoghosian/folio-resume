@@ -1,0 +1,44 @@
+# SwiftLint — https://realm.github.io/SwiftLint
+included:
+  - App
+  - Packages/FolioKit/Sources
+  - Packages/FolioKit/Tests
+excluded:
+  - Packages/FolioKit/.build
+disabled_rules:
+  - trailing_comma   # multi-line literals keep a trailing comma so diffs stay one line
+opt_in_rules:
+  - closure_spacing
+  - contains_over_first_not_nil
+  - empty_count
+  - empty_string
+  - first_where
+  - modifier_order
+  - redundant_nil_coalescing
+  - sorted_first_last
+  - toggle_bool
+line_length:
+  warning: 160
+  error: 250
+  ignores_comments: true
+  ignores_urls: true
+identifier_name:
+  max_length:
+    warning: 60
+    error: 80
+  excluded:
+    - id
+    - ok
+    - us
+
+reporter: xcode
+
+
+# Model initializers take one parameter per field (a forecast hour has many).
+function_parameter_count:
+  warning: 12
+  error: 14
+
+# A `switch` over enum cases is one decision, not one per case.
+cyclomatic_complexity:
+  ignores_case_statements: true
